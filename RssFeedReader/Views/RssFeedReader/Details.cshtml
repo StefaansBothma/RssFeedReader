@@ -1,0 +1,44 @@
+﻿@model RssFeedReader.RssFeed
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>RssFeed</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FeedID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FeedID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FeedUrl)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FeedUrl)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FeedPublishDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FeedPublishDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FeedRead)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FeedRead)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

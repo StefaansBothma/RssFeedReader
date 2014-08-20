@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RssDBModelStoreContainer" CdmEntityContainer="RssDBEntities">
+    <EntitySetMapping Name="RssFeeds">
+      <EntityTypeMapping TypeName="RssDBModel.RssFeed">
+        <MappingFragment StoreEntitySet="RssFeeds">
+          <ScalarProperty Name="FeedUrl" ColumnName="FeedUrl" />
+          <ScalarProperty Name="FeedID" ColumnName="FeedID" />
+          <ScalarProperty Name="FeedPublishDate" ColumnName="FeedPublishDate" />
+          <ScalarProperty Name="FeedRead" ColumnName="FeedRead" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

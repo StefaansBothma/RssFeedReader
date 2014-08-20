@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssFeedReader", "RssFeedReader\RssFeedReader.csproj", "{15DBFB3B-A9FA-4BD7-973D-7E8C14433FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssFeedReader.Tests", "RssFeedReader.Tests\RssFeedReader.Tests.csproj", "{EB1DC44D-EEE7-40B2-BDE9-7AF7494A14F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15DBFB3B-A9FA-4BD7-973D-7E8C14433FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DBFB3B-A9FA-4BD7-973D-7E8C14433FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15DBFB3B-A9FA-4BD7-973D-7E8C14433FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15DBFB3B-A9FA-4BD7-973D-7E8C14433FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB1DC44D-EEE7-40B2-BDE9-7AF7494A14F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB1DC44D-EEE7-40B2-BDE9-7AF7494A14F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB1DC44D-EEE7-40B2-BDE9-7AF7494A14F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB1DC44D-EEE7-40B2-BDE9-7AF7494A14F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

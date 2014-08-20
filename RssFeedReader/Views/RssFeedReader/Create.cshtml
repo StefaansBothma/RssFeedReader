@@ -1,0 +1,61 @@
+﻿@model RssFeedReader.RssFeed
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>RssFeed</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FeedID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FeedID)
+            @Html.ValidationMessageFor(model => model.FeedID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FeedUrl)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FeedUrl)
+            @Html.ValidationMessageFor(model => model.FeedUrl)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FeedPublishDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FeedPublishDate)
+            @Html.ValidationMessageFor(model => model.FeedPublishDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FeedRead)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FeedRead)
+            @Html.ValidationMessageFor(model => model.FeedRead)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
